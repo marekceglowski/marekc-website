@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; UTF-8">
+<head>
+    <title>marek c</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+</head>
+<html>
+    <body>
+        <div class="center">
+            <h1>marek c</h1>
+            
+            <div id="infodiv">
+                <a href="info.html"><img id="face" class="floater" src="images/face.gif"/></a>
+                <p><a href="info.html" id="info" class="link">info</a></p>
+            </div>
+            <div id="musicdiv">
+                <a href="https://marekc.bandcamp.com"><img id="musicgif" class="floater" src="images/music.gif"/></a>
+                <p><a href="https://marekc.bandcamp.com" id="music" class="link">music</a></p>
+            </div>
+            <div id="blogdiv">
+                <a href="#"><img id="bloggy" class="floater" src="images/bloggy.gif"/></a>
+                <p><a href="#" title="Under construction!" id="blog" class="link" style="text-decoration: line-through;">-blog-</a></p>
+            </div>
+            <div id="videodiv">
+                <a href="https://www.youtube.com/channel/UCiyEidjpaUyrI3gARKSpNhA"><img id="tv" class="floater" src="images/tv.gif"/></a>
+                <p><a href="https://www.youtube.com/channel/UCiyEidjpaUyrI3gARKSpNhA" id="video" class="link">video</a></p>
+            </div>
+            <div id="instadiv">
+                <a href="https://www.instagram.com/marek.makes/"><img id="instafriend" class="floater" src="images/instafriend.gif"/></a>
+                <p><a href="https://www.instagram.com/marek.makes/" id="insta" class="link">insta</a></p>
+            </div>
+            <div id="secretdiv">
+                <a href="#"><img id="question" class="floater" src="images/question.gif"/></a>
+                <p><a href="#" title="Under construction!" id="secret" class="link" style="text-decoration: line-through;">-secret-</a></p>
+            </div>
+        </div>
+        <div class="scrollbg"></div>
+        <div class="vines"></div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function() {
+
+        $( document ).tooltip({ show: { delay: 0, duration: 0 } });
+
+        $('#face').on('mouseover', function() {
+            $('#info').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#info').removeClass('hover');
+        });
+
+        $('#info').on('mouseover', function() {
+            $('#face').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#face').removeClass('hover');
+        });
+
+        $('#music').on('mouseover', function() {
+            $('#musicgif').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#musicgif').removeClass('hover');
+        });
+
+        $('#musicgif').on('mouseover', function() {
+            $('#music').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#music').removeClass('hover');
+        });
+
+        $('#blog').on('mouseover', function() {
+            $('#bloggy').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#bloggy').removeClass('hover');
+        });
+
+        $('#bloggy').on('mouseover', function() {
+            $('#blog').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#blog').removeClass('hover');
+        });
+
+        $('#video').on('mouseover', function() {
+            $('#tv').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#tv').removeClass('hover');
+        });
+
+        $('#tv').on('mouseover', function() {
+            $('#video').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#video').removeClass('hover');
+        });
+
+        $('#insta').on('mouseover', function() {
+            $('#instafriend').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#instafriend').removeClass('hover');
+        });
+
+        $('#instafriend').on('mouseover', function() {
+            $('#insta').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#insta').removeClass('hover');
+        });
+
+        $('#question').on('mouseover', function() {
+            $('#secret').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#secret').removeClass('hover');
+        });
+
+        $('#secret').on('mouseover', function() {
+            $('#question').addClass('hover');
+        }).on('mouseleave', function() {
+            $('#question').removeClass('hover');
+        });
+    });
+</script>
+
+<style>
+    
+</style>
