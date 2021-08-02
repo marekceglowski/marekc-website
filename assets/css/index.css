@@ -20,7 +20,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: 2px solid #FFFFFF;
-    background: url('images/divbg.gif');
+    background: url('../images/divbg.gif');
     background-size: 16px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -66,7 +66,7 @@ body {
 	height: 100%;
 	background-repeat: repeat;
 	position:fixed;
-    background: url('images/divbg.gif');
+    background: url('../images/divbg.gif');
     background-size: 16px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -80,7 +80,7 @@ body {
 	position:fixed;
 	top:0px;
 	left:0px;
-	background-image: url("images/vines.png");
+	background-image: url("../images/vines.png");
 	will-change: transform, filter;
 	z-index:-1;
     animation: backgroundScroll 100s linear infinite;

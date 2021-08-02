@@ -19,7 +19,7 @@ body {
     position:fixed;
     top:0px;
     left:0px;
-    background-image: url("images/info_bg.png");
+    background-image: url("../images/info_bg.png");
     background-repeat: repeat;
     will-change: transform, filter;
     z-index:-2;
@@ -33,7 +33,7 @@ body {
 	position:fixed;
 	top:0px;
 	left:0px;
-	background-image: url("images/spin_border.gif");
+	background-image: url("../images/spin_border.gif");
 	will-change: transform, filter;
 	z-index:-1;
     animation: backgroundScroll2 40s linear infinite;
@@ -43,6 +43,19 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 400px;
+    height: 80%;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid #FFFFFF;
+    background: url('../images/divbg.gif');
+    background-size: 16px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .construction {
@@ -50,11 +63,11 @@ body {
 }
 
 @keyframes backgroundScroll {
-    0% {background-position:0px 0px; filter: opacity(100%);}
-    25% {background-position:-80px -80px; filter: opacity(70%);}
-    50% {background-position:-128px -128px; filter: opacity(100%);}
-    75% {background-position:-176px -176px; filter: opacity(70%);}
-    100% {background-position: -256px -256px; filter: opacity(100%);}
+    0% {background-position:0px 0px;}
+    25% {background-position:-80px -80px;}
+    50% {background-position:-128px -128px;}
+    75% {background-position:-176px -176px;}
+    100% {background-position: -256px -256px;}
 }
     
 @keyframes backgroundScroll2 {
