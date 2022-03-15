@@ -13,6 +13,7 @@ body {
     padding:0;
     height:100%;
 }
+
 .infobg {
     width: 100%;
     height: 100%;
@@ -80,6 +81,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
 }
 
 /* small */

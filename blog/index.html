@@ -1,0 +1,48 @@
+---
+layout: blog
+title: marek's blog
+pagination:
+  enabled: true
+---
+
+<div class="navbar" id="nav_2" style="display:none">
+  <div class="navitem">new</div>
+  <div class="navitem">top</div>
+</div>
+
+<div class="container">
+  {% for post in paginator.posts %}
+    {%if forloop.first %}
+      <div class="item" id="first">
+        <img class="preview_img" id="first_preview_img" src="{{post.img}}"
+          onerror="this.src='/assets/images/128x128.png';this.onerror=''" />
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </div>
+    {% else  %}
+      <div class="item">
+        <img class="preview_img" src="{{post.img}}"
+          onerror="this.src='/assets/images/128x128.png';this.onerror=''" />
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <div class="navbar" id="nav_2">
+    <div class="navitem">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">prev</a>
+      {% else %}
+        prev
+      {% endif %}
+    </div>
+    <div class="navitem">
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">next</a>
+      {% else %} 
+        next 
+      {% endif %}
+    </div>
+  </div>
+</div>

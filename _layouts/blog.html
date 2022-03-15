@@ -4,15 +4,24 @@
 {% seo %}
 <head>
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="assets/css/info.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 <html>
     <body>
-        <div class="infobg"></div>
-        <div class="spinborder"></div>
+        <div class="header">
+            <h1>marek's blog</h1>
+            <div class="navbar">
+                <div class="navitem"><a href="/blog">home</a></div>
+                <div class="navitem"><a href="/blog/archive">archive</a></div>
+                <div class="navitem"><a href="/info">about</a></div>
+            </div>
+        </div>
         <div class="center">
             {{ content }}
+        </div>
+        <div id="footer" class="header">
+            (c) marek 2022
         </div>
     </body>
 </html>
